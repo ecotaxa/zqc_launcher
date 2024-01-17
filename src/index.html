@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZQC launcher</title>
+  <script type="module" src="/main.js" defer></script>
+  <style>
+    .logo.vanilla:hover {
+      filter: drop-shadow(0 0 2em #ffe21c);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="loader">
+    <div id="text">Loading...</div>
+    <div class="spinner"></div>
+  </div>
+
+  <div class="container">
+    <h1>Local Drives to Docker Drive</h1>
+    <h2>Add Drives Manually</h2>
+
+    <form class="row" id="add-drives-form">
+      <button type="submit">Add drives</button>
+    </form>
+
+    <h2>Added Drives</h2>
+    <div class="list">
+      <ul id="drives-list"></ul>
+    </div>
+
+    <form class="row" id="generate-docker-form">
+      <button type="submit">Generate Docker</button>
+    </form>
+
+    <div id="drive-mappings"></div>
+    <div id="errors-footer">
+    </div>
+    <div id="docker_link"> <a href="http://localhost:8050/" target="_blank"> <button type="submit">🔗 Open app</button>
+      </a></div>
+
+  </div>
+</body>
+
+</html>
