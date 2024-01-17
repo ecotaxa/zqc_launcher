@@ -67,7 +67,7 @@ function generateDriveMappings() {
   console.log('Generating drive mappings...');
   let mapping = [];
   const driveMappings = drives.reduce((acc, drive) => {
-    const dockerDriveName = drive.replace(/[\\\/]/g, '_');
+    const dockerDriveName = drive.replace(/[:\\\/]/g, '_');
     acc += `<div>${drive} => ${dockerDriveName}</div>`;
     mapping.push({ local_drive: drive, docker_drive: dockerDriveName });
     return acc;
