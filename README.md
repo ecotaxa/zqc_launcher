@@ -40,20 +40,21 @@ Welcome to ZQC_launcher, a Tauri-based application designed for enhancing your e
 ## CI 
 
 1. **Build Triggered by New Tag**:
+   - Make sure to set the package version in `package.json`, `tauri.conf.json` and `Cargo.toml`.
    - Upon pushing a new tag (`git tag -a v0.0.0 -m "MESSAGE"` and `git push --follow-tags`), the zqc launcher is built for Windows, MacOS and Linux.
 
-2. **Draft Release Creation**:
-   - A draft release note, tagged 'latest', is automatically generated.
+3. **Draft Release Creation**:
+   - A draft release note, tagged 'main', is automatically generated.
    - This includes executables for the current software version.
 
-3. **Review Process**:
+4. **Review Process**:
    - The draft release note need to be reviewed for accuracy and completeness.
    - Executables need to be checked for any issues.
    - Necessary changes are applied to the release note and executables.
 
-4. **Publishing the Release Note**:
+5. **Publishing the Release Note**:
    - The final release note is published, marking the release as official.
-   - The 'latest' tag may be updated to a specific version tag.
+   - The 'main' tag may be updated to a specific version tag.
 
 This CI process ensures that each release is systematically built, reviewed, and documented before being made available to users.
 
