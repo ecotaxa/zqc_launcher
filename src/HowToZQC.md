@@ -3,7 +3,6 @@
 This guide provides step-by-step instructions for running quality controls on Zooscan data folders produced by ZooProcess. We'll use Docker Desktop and the zqc_launcher from the PIQv website. **Please note that Docker Desktop must be opened every time you wish to run the zqc app container.**
 
 ## Prerequisites
-- Basic understanding of command-line operations.
 - Operating System: Windows, macOS, or Linux.
 
 ## Step 1: Install Docker Desktop
@@ -18,14 +17,13 @@ This guide provides step-by-step instructions for running quality controls on Zo
 
 ## Step 2: Download the zqc_launcher
 
-1. **Access PIQv Website**: Go to the PIQv website at [PIQv URL](https://sites.google.com/view/piqv/softwares/flowcamzooscan?authuser=0).
-2. **OR Acess zqc_launcher releases**: Go to ecotaxa github zqc_launcher project at [Releases URL](https://github.com/ecotaxa/zqc_launcher/releases)
+1. **OR Acess zqc_launcher releases**: Go to ecotaxa github zqc_launcher project at [Releases URL](https://github.com/ecotaxa/zqc_launcher/releases)
 
-3. **Download zqc_launcher**: Locate the zqc_launcher download link for your operating system and download it to your computer.
+2. **Download zqc_launcher**: Locate the zqc_launcher download link for your operating system and download it to your computer.
 
 ## Step 3: Map Local Drives to Docker Volume
 
-1. **Open zqc_launcher**: Run the zqc_launcher you downloaded.
+1. **Open zqc_launcher**: Run the zqc_launcher you downloaded. Due to security on macOS system to run it [option + right click] on the app icon then click open.
 
 2. **Map Drives**: Use the user-friendly interface to select and map your local drives (where Zooscan projects are stored) to a Docker volume. Note that Zooscan projects should be located at the root of the selected drives; otherwise, you will not be able to access them from the application. This process allows Docker to access the data for processing and writing quality control reports in it.
 
